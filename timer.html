@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    
+
+	<title>Pomodoro Timer</title>
+
+    
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="timerStyle.css">
+</head>
+
+<body>
+  <!-- Thanks to Chris Heilmann and Ildar Sagdejev for this CSS GitHub ribbon snippet-->
+  <style>#forkongithub a{background:#ededed;color:#3c3c3c;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1.1rem;line-height:2rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#ffffff;color:#000000;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#000000;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:absolute;display:block;top:0;right:0;width:200px;overflow:hidden;height:200px;z-index:9999;}#forkongithub a{width:200px;position:absolute;top:40px;right:-40px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style><span id="forkongithub"><a href="https://github.com/Daniel-Lopez/Pomodoro">Fork me on GitHub</a></span>
+  
+  
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="heading">
+          <h1>Pomodoro Timer</h1>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+<!-- BUTTONS ROW -->
+    <div class="row">
+    	
+    	<!--break btns-->
+    	<div class="col-md-3"> </div><!--spacer-->
+    	<div id="input-btns-break" class="col-md-3">
+    		<div class="row"><!--title row-->
+    			<div class="btn-titles col-md-12">
+            		BREAK LENGTH
+          		</div>
+    		</div>
+    		<div class="row"><!--btns/display row-->
+    		  <div class="col-md-12">
+    			<div class="col-md-1 col-md-offset-3">
+             		<button id="break-minus-btn">
+            			<span class="plus-minus-btns"> - </span>
+             		</button>
+             		&nbsp;
+            	</div>
+            	<div class="col-md-1">
+            		<span id="break-btn-display" class="btn-displays">
+              			5
+          			</span>
+          			&nbsp;
+            	</div>
+            	<div class="col-md-1">
+            		<button id="break-plus-btn">
+            			<span class="plus-minus-btns"> + </span>
+             		</button>
+            	</div>
+              </div>
+    		</div>
+    	</div>
+    	
+    	<!--main btns-->
+    	<div id="input-btns-main" class="col-md-3">
+    		<div class="row"><!--title row-->
+    			<div class="btn-titles col-md-12">
+            		SESSION LENGTH
+          		</div>
+    		</div>
+    		<div class="row"><!--btns/display row-->
+    		  <div class="col-md-12">
+    			<div class="col-md-1 col-md-offset-3">
+             		<button id="main-minus-btn">
+            			<span class="plus-minus-btns"> - </span>
+             		</button>
+             		&nbsp;
+            	</div>
+            	<div class="col-md-1">
+            		<span id="main-btn-display" class="btn-displays">
+              			25
+          			</span>
+          			&nbsp;
+            	</div>
+            	<div class="col-md-1 col-md-offset-1">
+            		<button id="main-plus-btn">
+            			<span class="plus-minus-btns"> + </span>
+             		</button>
+            	</div>
+              </div>
+    		</div>
+    	</div>
+    	
+    </div> <!--btns row-->
+    	
+    
+    <div class="row">
+      <div class="col-md-12">
+            <div id="session-timer">
+              <div id="timer-display-inner-circle">
+                <div id="fill" class="filling">
+                  <div id="session" class="session">
+                    Session
+                  </div>
+                  <div id="timer-numbers">
+                    25
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div id="break-timer">
+              <div id="timer-display-inner-circle-break">
+                <div id="fill-break" class="filling">
+                  <div id="break" class="session">
+                   BREAK! 
+                  </div>
+                  <div id="timer-numbers-break">
+                    25
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="timerScript.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,139 @@
+body{
+  background-color: #3b3b3b;
+  font-family: Lato,sans-serif;
+}
+#timer
+{
+  font-size: 48px;
+}
+#timer2
+{
+  font-size: 48px;
+  color: red;
+}
+
+h1{
+  text-align: center;
+  color: white;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  font-size: 5em;
+}
+#timer-display-circle
+{
+  background-color: #00cc00;
+  height: 300px;
+  width: 300px;
+  border: 3px solid #cccccc;
+  border-radius: 100%;
+  text-align: center;
+  color: white;
+  margin: auto;
+  font-size: 42px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+#timer-display-inner-circle
+{
+  height: 100%;
+  width: 300px;
+  background-color: #3b3b3b;
+  font-family: Lato,sans-serif;
+  cursor: pointer;
+}
+#timer-display-inner-circle-break
+{
+  height: 100%;
+  width: 300px;
+  background-color: #3b3b3b;
+  font-family: Lato,sans-serif;
+  cursor: pointer;
+}
+#session
+{
+  padding: 50px;
+}
+#break
+{
+  padding: 50px;
+}
+#timer-numbers
+{
+  padding: 50px;
+}
+#timer-numbers-break
+{
+  padding: 50px;
+}
+
+.btn-titles
+{
+  color: white;
+}
+
+.btn-displays
+{
+  font-size: 32px;
+  color: white;
+}
+
+#break-timer
+{
+    display: none;
+    
+    background-color: #e60000;
+    height: 300px;
+    width: 300px;
+    border: 3px solid #cccccc;
+    border-radius: 100%;
+    text-align: center;
+    color: white;
+    margin: auto;
+    font-size: 42px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+#session-timer
+{
+    display: ;
+    
+    background-color: #00cc00;
+    height: 300px;
+    width: 300px;
+    border: 3px solid #cccccc;
+    border-radius: 100%;
+    text-align: center;
+    color: white;
+    margin: auto;
+    font-size: 42px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+/********BUTTONS********/
+button
+{
+  background: transparent;
+  border: none;
+}
+button:focus
+{
+  outline-width: 0;
+}
+
+
+#input-btns-break
+{
+  text-align: center;
+}
+#input-btns-main
+{
+  text-align: center;
+}
+.plus-minus-btns
+{
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
